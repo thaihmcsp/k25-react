@@ -1,10 +1,44 @@
 .App {
   text-align: center;
+  width: 50%;
+  border: 1px solid black;
+  margin: auto;
+
 }
 
 .App-logo {
   height: 40vmin;
   pointer-events: none;
+}
+
+.modal{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    flex-direction: column;
+    transform: translate(-50%, -50%);
+    align-items: center;
+    justify-content: center;
+    background: red;
+    width: 50vw;
+    height: 200px;
+}
+.modal input{
+    width: 100%;
+}
+.expenseInfo{
+    width: 100%;
+    padding: 0; 
+    margin: 0;
+}
+.expense, .expenseInfo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 4px;
+    background: #ccc;
+    padding: 8px;
+    margin: 8px 0;
 }
 
 @media (prefers-reduced-motion: no-preference) {

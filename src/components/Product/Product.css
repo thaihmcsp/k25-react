@@ -1,0 +1,11 @@
+.listProduct{
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.openBtn{
+    display: flex;
+    justify-content: center;
+}
