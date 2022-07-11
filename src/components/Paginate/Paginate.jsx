@@ -4,18 +4,25 @@ import ListData from './ListData';
 import './paginate.css'
 import axios from 'axios';
 import { useLocation } from 'react-router-dom';
+import { useContext } from 'react';
+import context from '../../context/context';
+
 
 const onShowSizeChange = (current, pageSize) => {
     console.log(current, pageSize);
   };
 
 function Paginate() {
+
+    const data = useContext(context)
     const [listData, setListData] = useState([])
     const [showData, setShowData] = useState([])
     const [page, setPage] = useState(1)
     const [pageSize, setPageSize] = useState(10)
     const query = useLocation()
- 
+
+    console.log(23, data);
+    
     useEffect(function () {
         axios.get('https://www.nodemy.vn/api/bootcamp-1-s')
         .then(function(data){
