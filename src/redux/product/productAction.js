@@ -11,3 +11,4 @@ export function deleteProductAction (productId) {
         payload: productId
     }
 }
+

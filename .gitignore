@@ -10,7 +10,7 @@ note.txt
 /coverage
 src.rar
 # production
-/build
+# /build
 
 # misc
 .DS_Store
